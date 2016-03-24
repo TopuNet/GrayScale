@@ -21,10 +21,11 @@
 4. 页面<head>中引用/css/GaryScale.css
 5. 将想变灰的图片增加class="GaryScale"，并增加对应的svg标签。如：
 
- 	\<img src="images/gj_test_img.jpg" class="GrayScale" />
-    <svg class="GrayScale">
-        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
-    </svg>
+	 		
+		    <img src="images/gj_test_img.jpg" class="GrayScale" />
+		    <svg class="GrayScale">
+		        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
+		    </svg>
 
 页面底部调用初始化方法：
 --------------
