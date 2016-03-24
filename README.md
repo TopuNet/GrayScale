@@ -1,6 +1,10 @@
 # 图片灰度 插件 v1.0.1
 ###将图片变为灰色，可选鼠标悬停后是否复原
 
+更新历史：
+-------------
+
+
 文件结构：
 -------------
 1. /jq/GrayScale.js 放入项目文件夹jq中
@@ -21,10 +25,10 @@
 4. 页面<head>中引用/css/GaryScale.css
 5. 将想变灰的图片增加class="GaryScale"，并增加对应的svg标签。如：
 
- 	\<img src="images/gj_test_img.jpg" class="GrayScale" />
-    <svg class="GrayScale">
-        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
-    </svg>
+		<img src="images/gj_test_img.jpg" class="GrayScale" />
+		<svg class="GrayScale">
+			<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
+		</svg>
 
 页面底部调用初始化方法：
 --------------
