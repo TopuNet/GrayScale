@@ -1,13 +1,18 @@
-# 图片灰度 插件 v1.0.1
+# 图片灰度 插件 v1.1.1
 ###将图片变为灰色，可选鼠标悬停后是否复原
+###兼容原生JS规范和AMD规范
 
 更新历史：
 -------------
+v1.1.1
+
+1. 兼容原生JS和AMD规范
+2. 修改demo
 
 
 文件结构：
 -------------
-1. /jq/GrayScale.js 放入项目文件夹jq中
+1. /jq/GrayScale.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
 2. /css/GrayScale.css 放入项目文件夹css中
 
 页面引用：
@@ -20,8 +25,16 @@
 	        </filter>
 	    </svg>
 
-2. 页面底部引用最新版 /inc/Jquery.min.js#1.x.x
-3. Jquery后引用 /jq/GaryScale.js
+原生引用
+
+        2. 页面底部引用最新版 /inc/Jquery.min.js#1.x.x
+		3. Jquery后引用 /jq/GaryScale.js
+
+requireJS引用
+
+        2. 依赖GrayScale.js和(jquery.min.js#1.x 或 zepto.js)，成功后返回对象GrayScale
+
+
 4. 页面<head>中引用/css/GaryScale.css
 5. 将想变灰的图片增加class="GaryScale"，并增加对应的svg标签。如：
 
@@ -30,14 +43,14 @@
 			<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
 		</svg>
 
-页面底部调用初始化方法：
+调用方法：
 --------------
 
-	$(function(){
-		var GrayScale_para = {
-	        box_selector: "body.demo", // 作用范围选择器，如：body.index。无默认值
-	        hover_restore: true // 鼠标悬停时是否还原图片（即取消灰色滤镜），默认true
-		};
+		$(function(){
+			var GrayScale_para = {
+		        box_selector: "body.demo", // 作用范围选择器，如：body.index。无默认值
+		        hover_restore: true // 鼠标悬停时是否还原图片（即取消灰色滤镜），默认true
+			};
 
-		GrayScale.init(GrayScale_para);
-	});
+			GrayScale.init(GrayScale_para);
+		});

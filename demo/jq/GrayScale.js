@@ -1,4 +1,5 @@
 /*
+    v1.1.1
     高京
     20160324
     图片变灰滤镜配套js
@@ -22,9 +23,15 @@ var GrayScale = {
 
             $(para.box_selector + " svg.GrayScale image").hover(function() {
                 $(this).css("filter", "none");
-            },function(){
+            }, function() {
                 $(this).removeAttr("style");
             });
         }
     }
 };
+
+if (typeof define === "function" && define.amd) {
+    define(function() {
+        return GrayScale;
+    });
+}
