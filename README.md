@@ -4,11 +4,15 @@
 
 更新历史：
 -------------
+v1.1.1
+
+1. 兼容原生JS和AMD规范
+2. 修改demo
 
 
 文件结构：
 -------------
-1. /jq/GrayScale.js 放入项目文件夹jq中
+1. /jq/GrayScale.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
 2. /css/GrayScale.css 放入项目文件夹css中
 
 页面引用：
@@ -21,8 +25,16 @@
 	        </filter>
 	    </svg>
 
-2. 页面底部引用最新版 /inc/Jquery.min.js#1.x.x
-3. Jquery后引用 /jq/GaryScale.js
+原生引用
+
+        2. 页面底部引用最新版 /inc/Jquery.min.js#1.x.x
+		3. Jquery后引用 /jq/GaryScale.js
+
+requireJS引用
+
+        2. 依赖GrayScale.js和(jquery.min.js#1.x 或 zepto.js)，成功后返回对象GrayScale
+
+
 4. 页面<head>中引用/css/GaryScale.css
 5. 将想变灰的图片增加class="GaryScale"，并增加对应的svg标签。如：
 
@@ -31,7 +43,7 @@
 			<image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/gj_test_svg.jpg" x="0" y="0" width="800" height="522" />
 		</svg>
 
-页面底部调用初始化方法：
+调用方法：
 --------------
 
 	$(function(){
