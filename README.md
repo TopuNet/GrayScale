@@ -12,14 +12,14 @@ v1.1.2
 
 v1.1.1
 
-1. 兼容原生JS和AMD规范
-2. 修改demo
+		1. 兼容原生JS和AMD规范
+		2. 修改demo
 
 
 文件结构：
 -------------
-1. /jq/GrayScale.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
-2. /css/GrayScale.css 放入项目文件夹css中
+		1. /jq/GrayScale.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
+		2. /css/GrayScale.css 放入项目文件夹css中
 
 页面引用：
 -------------
