@@ -1,0 +1,22 @@
+{
+  "name": "TopuNet-GrayScale",
+  "version": "1.1.2",
+  "description": "GrayScale 将图片变为灰色，可选鼠标悬停后是否复原",
+  "main": "jq/GrayScale.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TopuNet/GrayScale.git"
+  },
+  "keywords": [
+    "topu.net"
+  ],
+  "author": "Topu.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TopuNet/GrayScale/issues"
+  },
+  "homepage": "https://github.com/TopuNet/GrayScale#readme"
+}
