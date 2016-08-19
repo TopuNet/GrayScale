@@ -1,11 +1,11 @@
-# 图片灰度 插件 v1.1.3
+# 图片灰度 插件 v1.1.4
 ###将图片变为灰色，可选鼠标悬停后是否复原
 ###安装：npm install TopuNet-GrayScale
 
 文件结构：
 -------------
 		1. /jq/GrayScale.js 放入项目文件夹jq（原生规范）或widget/lib（AMD规范）中
-		2. /css/GrayScale.css 放入项目文件夹css中
+		2. /css/GrayScale.css 放入项目文件夹inc中
 
 页面引用：
 -------------
@@ -52,6 +52,11 @@ requireJS引用
 
 更新历史：
 -------------
+
+v1.1.4
+
+		1. 修改配套样式文件
+		2. 修改Readme.md
 
 v1.1.3
 
