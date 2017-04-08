@@ -1,6 +1,6 @@
 # 图片灰度 插件 v1.1.4
-###将图片变为灰色，可选鼠标悬停后是否复原
-###安装：npm install TopuNet-GrayScale
+### 将图片变为灰色，可选鼠标悬停后是否复原
+### 安装：npm install TopuNet-GrayScale
 
 文件结构：
 -------------
